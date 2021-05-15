@@ -1,0 +1,55 @@
+<!Doctype html>
+<html>
+<head>
+    <title>Form test</title>
+    <link rel="stylesheet" href="css/index.css">
+    <script src="js/fieldsFunctions.js"></script>
+</head>
+<body>
+    <div id = "main">
+    <h1>Form with some javascript functions.</h1>
+    <p id ="text">This is just a basic form with some javascript functions like check fields length, passwords, if there isn't any <br>
+    error then you can upload your data :)</p>
+    <h2>Employment form to CompanyEnterprise.com</h2>
+    <form>
+    <label>Type your first name</label>
+    <br>
+    <input id="name" type="text" placeholder="Erick"    onkeypress="checkName()">
+    <p>This field must have a length greather or equal than 8 characters</p>
+    <p id ="ernom"></p>
+    <label>Type your surname</label>
+    <br>
+    <input id="surname" type="text" placeholder="Myers" onkeypress="checkSurName()"> 
+    <p id ="ersur"></p>
+    <p>This field must have a length greather or equal than 8 characters</p>
+    <label>Type your email</label>
+    <br>
+    <input id="email" type="email" placeholder="something@somehost.com" onchange="checkEmail()">
+    <p>You must use a valid format for you email</p>
+    <p id ="eremai"></p>
+    <label>Choose a password</label>
+    <br>
+    <input id="pwd" type="password" onchange="checkPasswords()"> 
+    <p>Your password must have a minimum lenght of 8 with a combination characters with numbers</p>
+    <p id ="erpass"></p>
+    <label>Confirm your password</label>
+    <br>
+    <p id ="erpass2"></p>
+    <input id="pwd2" type="password" onchange="checkPasswords()">
+    <p id ="equalPass"></p>
+    <label>Choose your birth date</label>
+    <br>
+    <input id="dt" type="date" onchange="checkDate()">
+    <p id ="dter"></p>
+    <p id ="status"></p>
+    <input type="button" value="Sing up" onclick="checkFields()">
+    </form>
+
+    <footer>
+        <p> emmc316 &copy </p>
+    </footer>
+</div>
+
+</body>
+
+</html>
